@@ -24,7 +24,20 @@
             class="form-container__prompt-input"
             rows="5"
             placeholder="Describe your image..."
+            id="prompt"
           ></textarea>
+          <div class="form-container__dropdown-group">
+            <select class="form-container__dropdown" id="dropdownStyles">
+              <option value="realistic">Realistic</option>
+              <option value="anime">Anime</option>
+              <option value="flux-schnell">Flux Schnell</option>
+            </select>
+            <select class="form-container__dropdown" id="dropdownRatio">
+              <option value="1:1">1:1</option>
+              <option value="16:9">16:9</option>
+              <option value="9:16">9:16</option>
+            </select>
+          </div>
         </section>
         <section class="image-container"></section>
       </div>
