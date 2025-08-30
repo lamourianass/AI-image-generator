@@ -73,8 +73,23 @@ body {
 }
 
 .form-container {
-  border: solid blue;
+  /* border: solid blue; */
   width: 100%;
+}
+
+.form-container__prompt-input {
+  resize: none;
+  background: var(--gray-bg-color);
+  border: solid 1.5px var(--gray-border-color);
+  border-radius: 8px;
+  padding: 8px 10px;
+  width: 100%;
+  outline: solid 3px transparent;
+  transition: 150ms ease-in;
+}
+
+.form-container__prompt-input:focus {
+  outline: solid 3px var(--light-secondary-color);
 }
 
 .image-container {
