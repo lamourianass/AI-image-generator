@@ -34,3 +34,11 @@ body {
   width: 90%;
   max-width: 700px;
 }
+
+.title__text {
+  background: linear-gradient(to right,
+  var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
