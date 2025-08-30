@@ -65,3 +65,20 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+
+.form-and-image {
+  display: flex;
+  margin-top: 24px;
+  gap: 32px;
+}
+
+.form-container {
+  border: solid blue;
+  width: 100%;
+}
+
+.image-container {
+  border: solid green;
+  aspect-ratio: 1/1;
+  width: 65%;
+}
