@@ -35,6 +35,17 @@ body {
   max-width: 700px;
 }
 
+.title__icon {
+  background: linear-gradient(to right,
+  var(--primary-color), var(--secondary-color));
+  fill: #fff;
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px var(--light-secondary-color);
+}
+
 .title__text {
   background: linear-gradient(to right,
   var(--primary-color), var(--secondary-color));
