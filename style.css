@@ -88,9 +88,27 @@ body {
   transition: 150ms ease-in;
 }
 
-.form-container__prompt-input:focus {
+.form-container__prompt-input:focus,
+.form-container__dropdown:focus {
   outline: solid 3px var(--light-secondary-color);
 }
+
+.form-container__dropdown-group {
+  /* border: solid; */
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+.form-container__dropdown {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--gray-bg-color);
+  border: solid 2px var(--gray-bg-color);
+  outline: solid 3px transparent;
+  transition: 300ms ease;
+}
+
 
 .image-container {
   border: solid green;
