@@ -53,3 +53,15 @@ function setLoadingState(isLoading) {
     imageContainer.classList.remove('loading')
   }
 }
+
+function downloadImage() {
+  const imageUrl = imageResultElement.src
+  if(!imageUrl) {
+    alert('No image available for download.')
+    return;
+  }
+  const link = document.createElement('a')
+  link.href = imageUrl
+  link.download = 'ai-generated-image.jpg';
+  link.click()
+}
