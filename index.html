@@ -38,12 +38,12 @@
               <option value="9:16">9:16</option>
             </select>
           </div>
-          <button class="form-container__btn">
+          <button class="form-container__btn" onclick="generateImage()">
             <box-icon type="solid" name="magic-wand"></box-icon>
             Generate Image
           </button>
         </section>
-        <section class="image-container">
+        <section class="image-container" id="imageContainer">
           <img id="imageResult" class="image-container__image-result" src="example.jpeg" />
           <div class="image-container__layer"></div>
           <button class="image-container__download-btn">
