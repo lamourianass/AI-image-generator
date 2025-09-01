@@ -192,7 +192,25 @@ body {
   background: rgba(255, 255, 255, 0.25);
   fill: white;
   cursor: pointer;
-  transition: 300ms ease;
+  transition: 500ms ease;
+}
+
+.image-container__loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.image-container__loading-spinner {
+  width: 70px;
+  height: 70px;
+}
+
+.image-container__loading-text {
+  font-size: 14px;
+  margin-top: 8px;
 }
 
 .image-container.loading {
