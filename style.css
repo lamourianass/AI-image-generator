@@ -48,7 +48,7 @@ body {
     var(--secondary-color)
   );
   fill: #fff;
-  width: 45px;
+  min-width: 45px;
   height: 45px;
   padding: 8px;
   border-radius: 12px;
@@ -111,7 +111,7 @@ body {
 }
 
 .form-container__btn {
-  margin-top: 16px;
+  margin-top: 25px;
   background: linear-gradient(
     to right,
     var(--primary-color),
@@ -149,8 +149,7 @@ body {
   position: relative;
 }
 
-.image-container:hover .image-container__layer
- {
+.image-container:hover .image-container__layer {
   opacity: 1;
 }
 .image-container:hover .image-container__download-btn {
@@ -194,4 +193,21 @@ body {
   fill: white;
   cursor: pointer;
   transition: 300ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    overflow-y: scroll;
+    max-height: 90%;
+  }
+  .form-and-image {
+    flex-direction: column;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .image-container__download-btn {
+    margin: 10px;
+    transform: scale(1.1);
+  }
 }
