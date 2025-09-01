@@ -195,6 +195,16 @@ body {
   transition: 300ms ease;
 }
 
+.image-container.loading {
+box-shadow: none;
+background: var(--gray-bg-color);
+}
+
+.image-container.loading .image-container__layer,
+.image-container.loading .image-container__download-btn {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     overflow-y: scroll;
